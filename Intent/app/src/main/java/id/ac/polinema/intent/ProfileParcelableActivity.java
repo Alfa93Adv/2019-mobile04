@@ -28,7 +28,7 @@ public class ProfileParcelableActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
 
-            // TODO: display value here
+            // TODO: display value herep
             User user = extras.getParcelable(A);
 
             String username = user.getUsername();

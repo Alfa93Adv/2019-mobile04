@@ -15,10 +15,6 @@ public class ParcelableActivity extends AppCompatActivity {
     private EditText nameInput;
     private EditText ageInput;
 
-    public static final String USERNAME_KEY = "username";
-    public static final String NAME_KEY = "name";
-    public static final String AGE_KEY = "age";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +31,7 @@ public class ParcelableActivity extends AppCompatActivity {
 
         User user = new User(username,name,age);
 
-        Intent intent = new Intent(this, ProfileBundleActivity.class);
+        Intent intent = new Intent(this, ProfileParcelableActivity.class);
         intent.putExtra(A, user);
         startActivity(intent);
     }
